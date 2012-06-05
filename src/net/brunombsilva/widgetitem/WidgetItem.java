@@ -2,6 +2,8 @@ package net.brunombsilva.widgetitem;
 
 import java.io.File;
 import java.io.FileOutputStream;
+
+import net.brunombsilva.widgetitem.R;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -21,11 +23,11 @@ import android.widget.TextView;
 public abstract class WidgetItem {
 	private File file;
 	private Context context;
-	private Factory factory;
+	private AbstractFactory factory;
 	private int thumbnailMaxWidth;
 	private int thumbnailMaxHeight;
 	
-	public Factory getFactory(){
+	public AbstractFactory getFactory(){
 		return this.factory;
 	}
 
@@ -184,7 +186,7 @@ public abstract class WidgetItem {
 
 		return scaledBitmap;
 	}
-	public WidgetItem(File file, Context context, Factory factory) {
+	public WidgetItem(File file, Context context, AbstractFactory factory) {
 		this.context = context;
 		this.file = file;
 		this.factory = factory;

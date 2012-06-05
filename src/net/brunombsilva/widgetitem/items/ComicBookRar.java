@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import net.brunombsilva.widgetitem.Factory;
+import net.brunombsilva.widgetitem.AbstractFactory;
 import net.brunombsilva.widgetitem.WidgetItem;
 
 
@@ -19,7 +19,7 @@ import android.graphics.Bitmap;
 
 public class ComicBookRar extends WidgetItem {
 
-	public ComicBookRar(File file, Context context, Factory factory) {
+	public ComicBookRar(File file, Context context, AbstractFactory factory) {
 		super(file, context, factory);
 		// TODO Auto-generated constructor stub
 	}

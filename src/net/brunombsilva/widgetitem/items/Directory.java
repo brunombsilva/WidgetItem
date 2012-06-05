@@ -2,7 +2,7 @@ package net.brunombsilva.widgetitem.items;
 
 import java.io.File;
 
-import net.brunombsilva.widgetitem.Factory;
+import net.brunombsilva.widgetitem.AbstractFactory;
 import net.brunombsilva.widgetitem.WidgetItem;
 
 
@@ -16,7 +16,7 @@ import android.graphics.Bitmap.Config;
 
 public class Directory extends WidgetItem {
 
-	public Directory(File file, Context context, Factory factory) {
+	public Directory(File file, Context context, AbstractFactory factory) {
 		super(file, context, factory);
 	}
 

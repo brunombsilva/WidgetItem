@@ -2,7 +2,7 @@ package net.brunombsilva.widgetitem.items;
 
 import java.io.File;
 
-import net.brunombsilva.widgetitem.Factory;
+import net.brunombsilva.widgetitem.AbstractFactory;
 import net.brunombsilva.widgetitem.WidgetItem;
 
 
@@ -11,7 +11,7 @@ import android.graphics.Bitmap;
 
 public class Unknown extends WidgetItem {
 
-	public Unknown(File file, Context context, Factory factory) {
+	public Unknown(File file, Context context, AbstractFactory factory) {
 		super(file, context, factory);
 	}
 

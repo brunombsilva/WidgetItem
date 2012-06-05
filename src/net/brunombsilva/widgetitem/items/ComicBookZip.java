@@ -9,7 +9,7 @@ import java.util.Enumeration;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
-import net.brunombsilva.widgetitem.Factory;
+import net.brunombsilva.widgetitem.AbstractFactory;
 import net.brunombsilva.widgetitem.WidgetItem;
 
 
@@ -18,7 +18,7 @@ import android.graphics.Bitmap;
 
 public class ComicBookZip extends WidgetItem {
 
-	public ComicBookZip(File file, Context context, Factory factory) {
+	public ComicBookZip(File file, Context context, AbstractFactory factory) {
 		super(file, context, factory);
 		// TODO Auto-generated constructor stub
 	}
